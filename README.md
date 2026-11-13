@@ -1,6 +1,6 @@
 # Airfoile
 
-A daily guessing game for NACA 4-digit airfoils. You see the shape; guess the `MPXX` code in 6 tries.
+A daily guessing game for NACA 4-digit airfoils. You see the shape; guess the `MPXX` code in 4 tries.
 
 - **M** – max camber, % chord
 - **P** – position of max camber, tenths of chord

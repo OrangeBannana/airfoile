@@ -42,7 +42,7 @@ button:active{background:var(--soft)}
 <body>
 <main>
 <header><h1>AIRFOILE</h1><span><span id="no"></span> &nbsp;<a href="#" id="q">?</a></span></header>
-<p id="help" hidden>Guess the NACA 4-digit airfoil in 6 tries.<br><br>
+<p id="help" hidden>Guess the NACA 4-digit airfoil in 4 tries.<br><br>
 MPXX — M: max camber (% chord) · P: camber position (tenths of chord) · XX: thickness (% chord). Symmetric sections are 00XX.<br><br>
 ■ right digit · bold border: off by one · ↑↓ go higher / lower. Your last guess is drawn dashed.</p>
 <svg viewBox="-30 -200 1060 320" aria-label="target airfoil"><line class="chord" x1="0" y1="0" x2="1000" y2="0"/><path id="tp" class="target"/><path id="gp" class="guess"/></svg>
@@ -53,7 +53,7 @@ MPXX — M: max camber (% chord) · P: camber position (tenths of chord) · XX: 
 </main>
 <script>
 (()=>{
-const TRIES=6, EPOCH=Date.UTC(2026,10,12);
+const TRIES=4, EPOCH=Date.UTC(2026,10,12);
 const $=id=>document.getElementById(id);
 
 // --- NACA 4-digit geometry ---
